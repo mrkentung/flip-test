@@ -138,9 +138,7 @@ const Home = () => {
                             createdAt={item.created_at}
                         />
                     ))
-                    ) : (
-                        <span>Not found</span>
-                    )}
+                    ) : null}
             </ListTransactions>
 
         </Fragment>
