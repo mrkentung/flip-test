@@ -3,19 +3,19 @@ import styled from 'styled-components'
 import theme from '../../theme'
 
 const Container = styled(Link)`
-  border: 1px solid ${theme.colors.orange};
-  border-radius: 4px;
-  color: ${theme.colors.orange};
-  padding: 5px 15px;
-  background: none;
-  outline: none;
-  :hover {
-    cursor: pointer;
-  }
-  :active {
-    opacity: 0.6;
-  }
-  text-decoration: none;
+	border: 1px solid ${theme.colors.orange};
+	border-radius: 4px;
+	color: ${theme.colors.orange};
+	padding: 5px 15px;
+	background: none;
+	outline: none;
+	:hover {
+		cursor: pointer;
+	}
+	:active {
+		opacity: 0.6;
+	}
+	text-decoration: none;
 `
 
 /**
@@ -26,9 +26,9 @@ const Container = styled(Link)`
  * @returns <Comp />
  */
 export default function Button({ linkTo, children, ...otherProps }) {
-  return (
-    <Container to={linkTo} {...otherProps}>
-      {children}
-    </Container>
-  )
+	return (
+		<Container to={linkTo} {...otherProps}>
+			{children}
+		</Container>
+	)
 }
