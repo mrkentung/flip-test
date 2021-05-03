@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import theme from '../../theme'
 import Label from '../Label'
 import currency from '../../helpers/idrCurrency'
+import indonesianDate from '../../helpers/indonesianDate'
 
 const Container = styled(Link)`
   width: 100%;
@@ -70,7 +71,7 @@ const TransactionItem = ({ linkTo,items,amount,beneficiaryBank,beneficiaryName,s
             </Text>
             <Text margin="0" fontSize="14px" textTransform="capitalize">
                 {currency(amount)} <i className="fas fa-circle"></i>{' '}
-                {createdAt}
+                {indonesianDate(createdAt)}
             </Text>
             </Col>
             <Col>
